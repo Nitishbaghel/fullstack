@@ -46,7 +46,6 @@ function deleted(itemIndex){
     console.log("Delete", itemIndex);
     itemJsonArrayStr = localStorage.getItem('itemsJson')
     itemJsonArray = JSON.parse(itemJsonArrayStr);
-    // Delete itemIndex element from the array
     itemJsonArray.splice(itemIndex, 1);
     localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
     update();
